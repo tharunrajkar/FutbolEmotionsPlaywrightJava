@@ -1,6 +1,5 @@
 package com.pages;
 
-import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 
 public class LoginPage {
@@ -15,7 +14,7 @@ public class LoginPage {
 	}
 
 	public  String loginIcon;
-	public static String username;
+	public  String username;
 	public String passWord;
 
 	public String clickLogin;

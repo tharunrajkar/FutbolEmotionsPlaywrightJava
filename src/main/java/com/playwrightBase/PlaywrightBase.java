@@ -1,8 +1,6 @@
 package com.playwrightBase;
 
 import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserType;
@@ -73,7 +71,8 @@ public class PlaywrightBase {
         }
     }
 
-    public static void inputValueElement(ElementHandle element, String inputValue) {
+    @SuppressWarnings("deprecation")
+	public static void inputValueElement(ElementHandle element, String inputValue) {
         try {
             element.type(inputValue);
         } catch (Exception e) {
